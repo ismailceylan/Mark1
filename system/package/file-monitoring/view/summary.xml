@@ -1,0 +1,10 @@
+<div class="summary row">
+	<div class="col-md-3 files">
+		<span class="total">0</span> / <span class="completed">0</span>
+	</div>
+	<div class="col-md-9">
+		<div class="progress">
+			<div class="progress-bar progress-bar-primary"></div>
+		</div>
+	</div>
+</div>

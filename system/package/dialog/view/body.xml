@@ -1,0 +1,20 @@
+<div class="dialog-container">
+	<div class="dialog" name="dialog">
+		<div class="overlay" name="overlay"></div>
+	</div>
+
+	<div class="dialog-content row" name="content">
+		<div class="title" name="titlebar" remove>
+			<span class="text" name="title-text">...</span>
+			<span class="close" name="close" remove>x</span>
+		</div>
+		<div class="body clearfix" name="body">...</div>
+		<div class="footer" name="footer" remove>
+			<div class="action clearfix" name="action" remove></div>
+		</div>
+	</div>
+
+	<div class="dialog-loader" name="loading" remove>
+		<img src="https://biliyon.net/assets/img/site/circular_loading.gif" name="loader-gif"/>
+	</div>
+</div>

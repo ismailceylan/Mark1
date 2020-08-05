@@ -1,0 +1,2 @@
+#resource-loading-indicator     { position: fixed; display: none; top: 0; height: 2px; background-color: #f1f1f1; width: 100%; z-index: 10 }
+#resource-loading-indicator div { content: ""; background-color: #ff1100; width: 0; height: 2px; position: fixed; transition: .8s }

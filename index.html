@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>Mark-1 Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="Description" content="Mark-1 is a Javascript based, powerful, modular programming library.">
+
+		<script type="text/javascript">
+			var site =
+			{
+				/**
+				 * Running mode.
+				 *  - development
+				 *  - testing
+				 *  - production
+				 *  
+				 * @type {String}
+				 */
+				environment: "development",
+
+				/**
+				 * All kind of path variables.
+				 * @type {Object}
+				 */
+				paths:
+				{
+					/**
+					 * Base URL.
+					 * @type {String}
+					 */
+					base: "http://localhost",
+
+					/**
+					 * Public resources path.
+					 * @type {String}
+					 */
+					public: "public",
+
+					/**
+					 * Public assets path.
+					 * @type {String}
+					 */
+					asset: "assets",
+
+					/**
+					 * Public javascripts path.
+					 * @type {String}
+					 */
+					js: "js",
+
+					/**
+					 * Public media files path.
+					 * @type {String}
+					 */
+					media: "media",
+
+					/**
+					 * Restful API path.
+					 * @type {String}
+					 */
+					api: "api",
+				},
+
+				/**
+				 * Restful API options.
+				 * @type {Object}
+				 */
+				api:
+				{
+					/**
+					 * Preferred rest api version.
+					 * @type {String}
+					 */
+					version: "1.0",
+
+					/**
+					 * Initial guest token for request. That
+					 * allows us to track unsigned guests.
+					 * 
+					 * @type {String}
+					 */
+					guest_token: "2d0ce4b006b398d64ae8f100c120b7e4"
+				}
+			}
+		</script>
+		<script type="text/javascript" data-main="app" src="system/core/require.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p>Welcome to project Mark-1.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+/*
+ *---------------------------------------------------------------
+ * POPOVER
+ *---------------------------------------------------------------
+ *
+ * popover widget settings.
+ *
+ */
+.popover                       { }
+.popover .title                { background-color: #F5F5F5 !important; margin: -10px !important; padding: 10px 10px 6px 10px !important; font-size: 16px; font-weight: bold; color: #647287; text-shadow: 1px 1px 0 #FFF; font-family: Teko, Arial, Tahoma, sans-serif; box-shadow: inset 1px 1px 0 0 #FFF }
+.popover .body                 { margin: 10px -10px -10px -10px; padding: 10px; font-size: 12px; font-family: Verdana, Helvetica, sans-serif !important }
+.popover-arrow                 { background-color: #fff; position: fixed; transform: rotate(45deg); width: 16px; height: 16px }
+.popover-arrow.top             { margin: 15px 0 0 0 }
+.popover-arrow.left            { margin: 0 0 0 15px }
+.popover-arrow.right           { margin: 0 0 0 -15px }
+.popover-arrow.bottom          { margin: -15px 0 0 0 }
+.popover-arrow.start-top-left  { margin: 27px 0 0 -8px }

@@ -1,0 +1,188 @@
+/*
+ *---------------------------------------------------------------
+ * MAIN ELEMENTS
+ *---------------------------------------------------------------
+ *
+ * The main element of the reaction interface, the settings
+ * of the interface holding the symbols and other general
+ * purpose elements.
+ */
+.reactable { position: relative }
+.reactable .reaction { position: absolute }
+.reactable .reaction.top { top: -50px; left: -50px }
+.reactable .reaction.bottom { bottom: -50px; left: -50px }
+.reactable .reaction .overlay { background-color: #f1f2f7; width: 295px; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12); height: 43px; border-radius: 31px }
+
+/*
+ *---------------------------------------------------------------
+ * ICONS, SIZES, POSITIONINGS...
+ *---------------------------------------------------------------
+ *
+ * The plugin uses high resolution image-based icons. For this
+ * reason, the icons in this image must be classified with CSS
+ * and organized accordingly. So for example, we can show a
+ * heart symbol in a DIV element simply by giving it the class
+ * name "love".
+ */
+.reactable .reaction .shell { transition: .12s ease-out; top: -1px; left: 123px; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; font-size: 23px; position: absolute }
+.reactable .reaction .shell span,
+.reactable .summary .shell span,
+.reactable .feelings-summary .shell span { background-image: url({{root}}/assets/js/system/package/reactable/img/reactable-icons.png); display: block; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100% }
+.reactable .reaction .shell.angry span,
+.reactable .summary .shell.angry span,
+.reactable .feelings-summary .shell.angry span { }
+.reactable .reaction .shell.upset span,
+.reactable .summary .shell.upset span,
+.reactable .feelings-summary .shell.upset span { background-position: 20% 0 }
+.reactable .reaction .shell.whoa span,
+.reactable .summary .shell.whoa span,
+.reactable .feelings-summary .shell.whoa span { background-position: 40% 0 }
+.reactable .reaction .shell.haha span,
+.reactable .summary .shell.haha span,
+.reactable .feelings-summary .shell.haha span { background-position: 60% 0 }
+.reactable .reaction .shell.love span,
+.reactable .summary .shell.love span,
+.reactable .feelings-summary .shell.love span { background-position: 80% 0 }
+.reactable .reaction .shell.like span,
+.reactable .summary .shell.like span,
+.reactable .feelings-summary .shell.like span { background-position: 100% 0 }
+.reactable .summary { margin: -6px 0 -3px 0; display: inline-block }
+.reactable .summary .shell,
+.reactable .feelings-summary .shell { width: 15px; height: 16px; float: left; margin: 0 0 0 -7px }
+
+.reactable .reaction.hover .shell.angry { left: 12px }
+.reactable .reaction.hover .shell.upset { left: 57px }
+.reactable .reaction.hover .shell.whoa  { left: 102px }
+.reactable .reaction.hover .shell.haha  { left: 147px; width: 44px }
+.reactable .reaction.hover .shell.love  { left: 192px }
+.reactable .reaction.hover .shell.like  { left: 238px }
+
+.reactable .reaction .shell i { position: absolute; left: 0; opacity: 0; margin: -33px 0 0 0; background-color: rgba(0,0,0,.52); color: #fff; font: 600 14px Arial, Tahoma; padding: 7px 12px; border-radius: 30px }
+.reactable .reaction .shell:hover i { animation-duration: .35s; animation-fill-mode: both; animation-name:zoomInUp; opacity: 1 }
+.reactable .reaction.bottom .shell i { margin-top: 4px }
+.reactable .reaction .shell:hover span { animation-duration: 1s; animation-fill-mode: both; animation-name:rubberBand }
+
+/*
+ *---------------------------------------------------------------
+ * REACTED ITEM BUTTON
+ *---------------------------------------------------------------
+ *
+ * The button of a reacted item should look different,
+ * eye-catching, and even that is not enough. Each emotion
+ * should have its own design for expression. The following
+ * classes provide this functionality.
+ */
+.reactable .label.choiced { font-weight: 600 }
+.reactable .label.choiced.like { color: #2196F3 }
+.reactable .label.choiced.angry { color: red }
+.reactable .label.choiced.love { color: #ff004e }
+.reactable .label.choiced.haha { color: #FF9800 }
+.reactable .label.choiced.whoa { color: #FF9800 }
+.reactable .label.choiced.upset { color: #FF9800 }
+
+/*
+ *---------------------------------------------------------------
+ * ANIMATIONS
+ *---------------------------------------------------------------
+ *
+ * A few animation implementations.
+ *
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+@keyframes zoomOutDown {
+	40% {
+		opacity: 1;
+		transform: scale3d(.475, .475, .475) translate3d(0, -80px, 0);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	to {
+		opacity: 0;
+		transform: scale3d(.1, .1, .1) translate3d(0, 122px, 0);
+		transform-origin: center bottom;
+		animation-timing-function: cubic-bezier(.175, .885, .32, 1)
+	}
+}
+@keyframes zoomOutUp {
+	40% {
+		opacity: 1;
+		transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	to {
+		opacity: 0;
+		transform: scale3d(.1, .1, .1) translate3d(0, -320px, 0);
+		transform-origin: center bottom;
+		animation-timing-function: cubic-bezier(.175, .885, .32, 1)
+	}
+}
+@keyframes rubberBand {
+	0% {transform: scaleX(1)}
+	30% {transform: scale3d(1.25, .75, 1)}
+	40% {transform: scale3d(.75, 1.25, 1)}
+	50% {transform: scale3d(1.15, .85, 1)}
+	65% { transform: scale3d(.95, 1.05, 1)}
+	75% { transform: scale3d(1.05, .95, 1)}
+	to { transform: scaleX(1)}
+}
+@keyframes zoomInUp {
+    0% {
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, 110px, 0);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        animation-timing-function: cubic-bezier(.175, .885, .32, 1)
+    }
+}
+
+.animated { animation-duration: 1s; animation-fill-mode: both }
+.rubberBand { animation-name: rubberBand; animation-iteration-count: 2 }
+.zoomOutDown { animation-name: zoomOutDown }
+.zoomOutUp { animation-name: zoomOutUp }
+.zoomInUp { animation-name: zoomInUp }
+
+/*
+ *---------------------------------------------------------------
+ * REACTION PARTICIPANTS, TOOLTIPS
+ *---------------------------------------------------------------
+ *
+ * Here you can edit the view of the tooltip sections showing
+ * the reaction summary and who reacts.
+ */
+.reactable .feelings-summary { position: absolute; z-index: 1; bottom: 36px; background-color: rgba(0,0,0,.72); color: #fff; list-style: none; border-radius: 4px; padding: 0 0 17px 0; margin: 0 }
+.reactable .feelings-summary li { width: max-content; padding: 15px 13px }
+.reactable .feelings-summary .shell { margin: 0; width: 20px; height: 20px }
+.reactable .feelings-summary i { float: left; font: 100 12px Arial, Helvetica, sans-serif; margin: 4px 0 0 5px }
+.reactable .feelings-summary .shell span {  }
+.reactable .inline-summary { display: none }
+
+/*
+ *---------------------------------------------------------------
+ * MOBILE VIEW
+ *---------------------------------------------------------------
+ *
+ * You can control the design of the plug-in on mobile devices
+ * by editing the following classes.
+ */
+.reactable.mobile { position: static }
+.reactable.mobile .reaction { transition: .2s; width: 120px; position: fixed; top: unset; left: unset; right: -170px; bottom: 0; z-index: 1 }
+.reactable.mobile .reaction.hover { right: -8px }
+.reactable.mobile .reaction .overlay { background-color: #f6f6f6; overflow: hidden; box-sizing: inherit; width: 112px; height: 465px; box-shadow: -2px 1px 3px rgba(0, 0, 0, 0.3); padding: 7px; border-radius: 10px 0 0 0 }
+.reactable.mobile .reaction .overlay button { display: block; text-transform: uppercase; background: none; border: 0; font: 900 23px Arial; width: 100%; text-align: right }
+.reactable.mobile .reaction .shell { width: 70px !important; margin-left: 30px; height: 70px; position: static }
+.reactable.mobile .reaction.left { left: -160px; right: unset }
+.reactable.mobile .reaction.left.hover { left: 0 }
+.reactable.mobile .reaction.left .overlay { border-radius: 0 10px 0 0; box-shadow: 2px -1px 3px rgba(0, 0, 0, 0.3) }
+.reactable.mobile .inline-summary { display: block; float: left; font: 100 25px Arial; margin: -18px 0 0 2px; width: 38px; text-align: left }
+.reactable.mobile .inline-summary p { margin: 41px 0; padding: 0 }
+.reactable.mobile .summary { margin: -5px 0 }
+.reactable.mobile .summary .shell,
+.reactable.mobile .feelings-summary .shell { width: 20px; height: 21px }
+.reactable.mobile.input-mode .reaction          { width: 84px }
+.reactable.mobile.input-mode .reaction .overlay { width: 70px }

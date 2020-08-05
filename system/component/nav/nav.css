@@ -1,0 +1,6 @@
+.nav-filter          { background-color: #f3f3f5; padding-left: 6px; border-radius: 0 0 2px 2px }
+.nav-filter a        { padding: 13px 14px 15px 14px; cursor: pointer; display: inline-block; font: 600 13px Montserrat; color: rgba(0,0,0,.44); text-decoration: none }
+.nav-filter a:hover,
+.nav-filter a:focus,
+.nav-filter a.active { color: rgba(0,0,0,.58) }
+.nav-filter a.active { background-color: rgba(81,83,101,.24); padding: 5px 14px 5px 14px; border-radius: 50px; font: 600 12px Montserrat; color: rgba(0,0,0,.58) }

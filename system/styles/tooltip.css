@@ -1,0 +1,11 @@
+.tooltip                    { position:fixed;  display:none }
+.tooltip .arrow             { position:absolute;  width:0;  height:0; border-color:transparent; border-style:solid }
+.tooltip .body              { max-width:200px; font-size:1.03em; word-wrap:break-word; line-height:1.5; font-family:helvetica; padding:6px; overflow:hidden; color:#fff; text-align:center; text-decoration:none; background-color:#000; border-radius:3px }
+.tooltip.top .arrow         { bottom:-5px; left:50%; margin-left:-5px; border-width:5px 5px 0; border-top-color:#000 }
+.tooltip.top-left .arrow    { bottom:-5px;  right: 5px; border-width:5px 5px 0; border-top-color:#000 }
+.tooltip.top-right .arrow   { left:5px; bottom:-5px; border-width:5px 5px 0; border-top-color:#000 }
+.tooltip.right .arrow       { top:50%; left:-5px; margin-top:-5px; border-width:5px 5px 5px 0; border-right-color:#000 }
+.tooltip.left .arrow        { top:50%; right:-5px; margin-top:-5px; border-width:5px 0 5px 5px; border-left-color:#000 }
+.tooltip.bottom .arrow      { top:-5px; left:50%; margin-left:-5px; border-width:0 5px 5px; border-bottom-color:#000 }
+.tooltip.bottom-left .arrow { top:-5px; right:5px; border-width:0 5px 5px; border-bottom-color:#000 }
+.tooltip.bottom-right .arrow{ top:-5px; left:5px; border-width:0 5px 5px; border-bottom-color:#000 }

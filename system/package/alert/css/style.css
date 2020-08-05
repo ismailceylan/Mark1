@@ -1,0 +1,9 @@
+.alertDialog             {  }
+.alertDialog .body       { min-height: 55px }
+.alertDialog .body .text { font: 100 14px/22px Arial }
+
+@media (max-width: 767px)
+{
+	.alertDialog .body       { min-height: 75px; text-align: center }
+	.alertDialog .body .text { font: 100 16px/28px Arial }
+}

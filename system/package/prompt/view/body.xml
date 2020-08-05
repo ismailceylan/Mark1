@@ -1,0 +1,10 @@
+<div class="prompt-body">
+	<form>
+		<label>
+			<span><i class="fa fa-fw fa-info-circle"></i></span>
+			<input/>
+			<p></p>
+		</label>
+	</form>
+	<div class="form-errors"></div>
+</div>

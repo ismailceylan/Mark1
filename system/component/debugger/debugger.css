@@ -1,0 +1,34 @@
+body         { color: rgba(255, 255, 255, 0.6); background-color: #222; font: 400 15px "Segoe UI", Arial, sans-serif }
+h1           { display: block; font: 700 24px "Segoe UI", Arial, sans-serif }
+.module      { background-color: rgba(255, 255, 255, 0.08); border-radius: 4px }
+
+.debugger:not(:last-child){ border-bottom: 4px solid #008eff; }
+
+.stack a     { transition: .14s; display: block; padding: 10px 0; font-size: 17px; color: inherit; text-decoration: none }
+.stack a:hover,
+.stack a:focus { color: #fff }
+
+.header a       { transition: .14s; color: #2196F3; text-decoration: none; font-weight: 600; font-size: 16px; display: table }
+.header a:hover,
+.header a:focus { color: #fff }
+.header .type   { font-style: italic; color: rgba(255, 255, 255, 0.23) }
+
+.line-numbers   { color: rgba(255, 255, 255, 0.2) }
+.line-numbers p { font-family: monospace; margin: 0 }
+.content       { color: inherit }
+.content,
+.line-numbers  { font-size: 18px; line-height: 28px }
+.highlight     { display: inline-block; width: 100%; padding-right: 30px }
+.the-line      { position: relative; background-color: rgba(255, 0, 0, 0.17); color: rgba(255, 255, 255, 0.8); font-weight: bold }
+.prev2, .next2 { background-color: rgba(255, 0, 0, 0.04) }
+.prev1, .next1 { background-color: rgba(255, 0, 0, 0.09); color: rgba(255, 255, 255, 0.7) }
+.content i:before { content: "◤"; position: absolute; color: #fff; top: -17px; margin-left: -4px; transform: rotate(-135deg); font-style: normal }
+
+pre::-webkit-scrollbar              { width: 8px; height: 8px }
+pre::-webkit-scrollbar-thumb        { background: rgba(0, 0, 0, 0.52); border-radius: 25px }
+pre::-webkit-scrollbar-thumb:hover  { background: rgba(0, 0, 0, 0.65) }
+pre::-webkit-scrollbar-thumb:active { background: rgba(0, 0, 0, 0.82) }
+pre::-webkit-scrollbar-track        { background: rgba(255, 255, 255, 0.06); border-radius: 25px }
+pre::-webkit-scrollbar-track:hover  { background: rgba(255, 255, 255, 0.1) }
+pre::-webkit-scrollbar-track:active { background: rgba(255, 255, 255, 0.2) }
+pre::-webkit-scrollbar-corner       { background: transparent }

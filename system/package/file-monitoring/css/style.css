@@ -1,0 +1,11 @@
+.summary                   { padding: 30px 10px 10px 10px }
+.summary .files            { font: 100 13px Arial, sans-serif; margin-top: -4px }
+.summary .files span       { font: inherit }
+.summary .files .completed {  }
+.summary .files .total     {  }
+.summary .progress         { height: 5px }
+
+@media (max-width: 767px)
+{
+	.summary { margin-bottom: 40px !important }
+}

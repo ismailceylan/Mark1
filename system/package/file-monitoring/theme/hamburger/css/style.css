@@ -1,0 +1,31 @@
+.tm-hamburger                 { margin-top: -25px }
+.tm-hamburger li              { margin-top: 25px; border-radius: 2px }
+.tm-hamburger h3              { margin: 0 0 12px 0; font: 700 23px Arial, sans-serif; word-wrap: break-word; height: 30px; overflow-y: auto }
+.tm-hamburger .content p      { margin: 0 0 5px 0 }
+.tm-hamburger .content p b    { font: 700 14px Arial, sans-serif }
+.tm-hamburger .content p span { font: 100 13px Arial, sans-serif }
+.tm-hamburger .ico-area       { text-align: center; overflow: hidden; border-right: 1px solid; height: 168px; padding-top: 30px }
+.tm-hamburger .ico-area i     { font-size: 6rem }
+.tm-hamburger .ico-area p     { font: 700 18px Arial; margin-top: -25px }
+.tm-hamburger .ico-area img   { width: 100%; border-radius: 2px; margin-top: -15px }
+.tm-hamburger .content        { padding: 15px }
+.tm-hamburger .status         { text-align: right; margin-top: 20px }
+.tm-hamburger .status a       { min-width: 60px; margin: 0 3px; font-size: 13px }
+.tm-hamburger .progress       { height: 5px; border-radius: 0; margin: 15px 0 }
+.tm-hamburger .has-error      { background-color: #480202 !important }
+.tm-hamburger .error-list     { list-style: none; padding: 0 }
+.tm-hamburger .error-list li  { margin-top: 5px; font: 100 14px Arial, sans-serif }
+
+@media (max-width: 767px)
+{
+	.tm-hamburger h3                     { text-align: center; overflow: unset; height: auto; padding: 0 0 10px 0 }
+	.tm-hamburger .ico-area              { border-right: 0; height: auto }
+	.tm-hamburger .status                { text-align: center; float: none !important; padding: 15px 15px; background: #0e0e0e; margin: 0 -15px -15px -15px }
+	.tm-hamburger .status a              { display: block; color: #fff; margin: 10px 0 0 0; border-radius: 2px !important; width: 100%; font: 700 14px Arial, sans-serif; padding: 12px 0 }
+	.tm-hamburger .status a.text-danger  { background-color: #ff2d1e }
+	.tm-hamburger .status a.text-warning { background-color: #e28600 }
+	.tm-hamburger .status a.text-primary { background-color: #428bca }
+	.tm-hamburger .status a.text-success { background-color: #1cce1f }
+	.tm-hamburger .progress              { height: 15px; border-radius: 2px }
+	.tm-hamburger .filesize              { border-top: 1px solid; padding-top: 20px }
+}

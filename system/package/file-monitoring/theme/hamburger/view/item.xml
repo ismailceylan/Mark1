@@ -1,0 +1,16 @@
+<li class="clearfix">
+	<div class="col-sm-2 ico-area">
+		<i class="fa fa-fw fa-file ico"></i>
+		<p></p>
+	</div>
+	<div class="col-sm-10 content">
+		<h3></h3>
+		<p class="filesize"><b>File Size: </b><span></span></p>
+		<p class="lastmod"><b>Last Modified: </b><span></span></p>
+		<div class="progress"><div class="progress-bar progress-bar-warning"></div></div>
+		<div class="status">
+			<a href="#" class="text-danger remove">Cancel</a>
+			<a href="#" class="text-success upload">Upload</a>
+		</div>
+	</div>
+</li>

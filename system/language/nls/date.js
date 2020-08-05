@@ -1,0 +1,46 @@
+define(
+[
+	"./tr/date",
+
+],
+{
+	"tr": true,
+
+	root:
+	{
+		before: "Before",
+		now: "Now",
+		later: "Later",
+		justNow: "Just Now",
+		justBefore: "Just Before",
+		minute: "minute",
+		minShort: "min",
+		minShortest: "m",
+		milisecond: "milisecond",
+		msShort: "ms",
+		second: "second",
+		secShort: "sec",
+		secShortest: "s",
+		hour: "hour",
+		hourShort: "hr",
+		hourShortest: "h",
+		day: "day",
+		dayShort: "day",
+		dayShortest: "d",
+		week: "week",
+		weekShort: "we",
+		weekShortest: "w",
+		month: "month",
+		monthShort: "mon",
+		monthShortest: "mn",
+		year: "year",
+		yearShort: "yr",
+		yearShortest: "y",
+		fullMonthNames: [ "January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December" ],
+		shortMonthNames: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		"Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+		fullWeekDayNames: [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+		shortWeekDayNames: [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" ],
+	},
+});

@@ -1,0 +1,19 @@
+<membercenter data-state="title close action .col-xs-10 .col-xs-offset-1 .col-sm-6 .col-sm-offset-3 .col-lg-4 .col-lg-offset-4">
+
+	<title>...</title>
+
+	<content>
+		<div class="member-center">
+			<div class="scene">
+				<div class="top"></div>
+				<div class="mid"></div>
+				<div class="bot"></div>
+			</div>
+		</div>
+	</content>
+
+	<buttonset>
+		<button id="OK" data-state="primary" data-focus='yes' data-role="close">OK</button>
+	</buttonset>
+
+</membercenter>
