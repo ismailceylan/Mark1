@@ -1,0 +1,30 @@
+({
+	"baseUrl": "../../",
+	"name": "app",
+	"out": "../market-place.min.js",
+	"optimize": "uglify",
+    "generateSourceMaps": true,
+	"findNestedDependencies": true,
+	"preserveLicenseComments": false,
+
+	"paths":
+	{
+		"requireLib": "system/library/almond",
+		"system/component/debugger/debugger": "empty:"
+	},
+
+	"packages":
+	[
+
+	],
+
+	"include": 
+	[
+		"requireLib"
+	],
+
+	"exclude":
+	[
+
+	]
+})
