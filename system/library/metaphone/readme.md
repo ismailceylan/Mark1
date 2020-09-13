@@ -83,7 +83,7 @@ $ echo 'vileness' | stemmer | metaphone
 
 ## License
 
-[MIT][license] © [İsmail Ceylan][author]
+[MIT][license] © [Titus Wormer][author]
 
 <!-- Definitions -->
 
